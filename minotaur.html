@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<b><h1>Mortal vs. The Minotaur</h1></b>
+		<script>
+			alert("You meet the thought to be mythical Greek moster, the Minotuar. Based on your knowledge on mosters, you know it is safe to assume that this moster wants to kill everything in its way, including you.");
+			let weapon = prompt("How would you like to fight the Minotaur? A sword, a spear, or a bow and arrow");
+
+			alert("A " + weapon + " has now suddenly appeared in your hand to help you fight the moster.");
+
+			let randomNumber = Math.random();
+
+			if(weapon === "sword"){
+				if(randomNumber <= .7){
+					alert("Congratulations! You defeated the Minotaur with your " + weapon + ", and sent its remains back to Tartarus.");
+				} else{
+					alert("Oh no! The Minotaur defeated you with its strength, and you got eaten. But don't worry, because of your brave actions, your soul is sure to be sent to Elysium.");
+				}
+
+			} else if(weapon === "spear"){
+				if(randomNumber <= .5){
+					alert("Congratulations! You defeated the Minotaur with your " + weapon + ", and sent its remains back to Tartarus.");
+				} else{
+					alert("Oh no! The Minotaur defeated you with its strength, and you got eaten. But don't worry, because of your brave actions, your soul is sure to be sent to Elysium.");
+				}
+
+			} else if(weapon === "bow and arrow"){
+				if(randomNumber <= .3){
+					alert("Congratulations! You defeated the Minotaur with your " + weapon + ", and sent its remains back to Tartarus.");
+				} else{
+					alert("Oh no! The Minotaur defeated you with its strength, and you got eaten. But don't worry, because of your brave actions, your soul is sure to be sent to Elysium.");
+				}
+			}
+		</script>
+
+		<div></div>
+
+		<button id="mino"><p>The Minotaur</p><br><img src="https://vignette.wikia.nocookie.net/olympians/images/7/78/Minocar.jpg/revision/latest?cb=20180721154958" height="150px"></button>
+		<button id="elysium"><p>Elysium</p><br><img src="https://vignette.wikia.nocookie.net/greekmythology/images/a/af/Elysium.jpg/revision/latest?cb=20161014071517" height="150px"></button>
+
+		<script>
+			$("button#mino").click(()=>{
+				$("div").html("<img src='https://vignette.wikia.nocookie.net/olympians/images/7/78/Minocar.jpg/revision/latest?cb=20180721154958' height='500px'>");
+				$("div").append("<p>The Minotaur is a Greek monster. He is half man, and half bull.</p>");
+			});
+			$("button#elysium").click(()=>{
+				$("div").html("<img src='https://vignette.wikia.nocookie.net/greekmythology/images/a/af/Elysium.jpg/revision/latest?cb=20161014071517' height='500px'>");
+				$("div").append("<p>Elysium is a mythical place in the Underworld in Greek mythology. Elysium is the paradise and resting place for heroes after death.</p>");
+			});
+		</script>
+		<style>
+			body{
+				background-color: lightpink;
+			}
+			h1{
+				color: white;
+			}
+		</style>
+	</body>
+</html
