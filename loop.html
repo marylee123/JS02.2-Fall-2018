@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<p id="demo"></p>
+		<script>
+			let stars = ["&nbsp&nbsp*", "&nbsp***", "*****", "&nbsp***", "&nbsp&nbsp*"];
+			let text = "";
+			for(let i = 0; i < stars.length; i++){
+				text = stars[i] + "<br>";
+				//$("div").append(stars[i] + "<br>");
+				console.log(text);
+			}
+			document.getElementById("demo").innerHTML = text;
+		</script>
+	</body>
+</html>
